@@ -1,0 +1,46 @@
+{
+  "build": {
+    "command": "pip install -r requirements.txt",
+    "publish": "python app.py",
+    "generator": "python"
+  },
+  "routes": [
+    {
+      "route": "/",
+      "service": "web"
+    },
+    {
+      "route": "/predict",
+      "service": "web"
+    },
+    {
+      "route": "/api/*",
+      "service": "web"
+    }
+  ],
+  "services": [
+    {
+      "name": "web",
+      "build": {
+        "command": "pip install -r requirements.txt",
+        "generator": "python"
+      },
+      "deploy": {
+        "count": 1,
+        "max容量": 1,
+        "min容量": 0,
+        "startCommand": "python app.py"
+      },
+      "env": {
+        "FORCE_SECRET": "false"
+      },
+      "healthCheck": {
+        "path": "/",
+        "intervalSeconds": 25,
+        "timeoutSeconds": 20,
+        "failureThreshold": 3,
+        "successThreshold": 1
+      }
+    }
+  ]
+}
