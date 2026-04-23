@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+*.md
+v3-phase*/
+v2/
+v1/
+*.bak*
