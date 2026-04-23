@@ -1,5 +1,5 @@
 @echo off
-REM Neural Fraud Detector v2 - Double-click to run
+REM Neural Fraud Detector v3 - Double-click to run
 REM Place this file next to launch.py and double-click to run
 
 cd /d "%~dp0"
@@ -11,7 +11,7 @@ if not exist "venv" (
 )
 
 REM Activate venv and run
-echo Starting Neural Fraud Detector v2...
+echo Starting Neural Fraud Detector v3...
 call venv\Scripts\activate.bat
 python launch.py
 
