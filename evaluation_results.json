@@ -1,0 +1,25 @@
+{
+  "confusion_matrix": {
+    "tn": 533092,
+    "fp": 20482,
+    "fn": 205,
+    "tp": 1940
+  },
+  "metrics": {
+    "roc_auc": 0.9835,
+    "pr_auc": 0.6181,
+    "accuracy": 0.9628,
+    "precision_fraud": 0.0865,
+    "recall_fraud": 0.9044,
+    "f1_fraud": 0.1579,
+    "precision_legit": 0.9996,
+    "recall_legit": 0.963,
+    "f1_legit": 0.981
+  },
+  "dataset": {
+    "total_train": 1296675,
+    "total_test": 555719,
+    "fraud_rate_train": 0.58,
+    "fraud_rate_test": 0.39
+  }
+}

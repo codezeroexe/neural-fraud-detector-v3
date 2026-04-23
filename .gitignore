@@ -1,0 +1,32 @@
+# Environment and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Huge dataset files (Too large for GitHub)
+*.csv
+
+# Huge dataset files (Too large for GitHub)
+*.csv
+
+# Model and Data Artifacts (uncomment if too large for your GitHub plan)
+# *.keras
+# *.pkl
+# *.h5
+
+# Any other IDEs/Tools
+.vscode/
+.idea/
+.opencode/
+.sisyphus/
+.ruff_cache/
+
+# Lesson Files
+01_THEORY_TUTORIAL.md
